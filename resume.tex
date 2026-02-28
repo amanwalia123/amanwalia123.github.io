@@ -1,0 +1,149 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[margin, centered]{res}
+\topmargin=-0.5in
+\oddsidemargin=-0.5in
+\evensidemargin=-0.5in
+\textwidth=6.5in
+\itemsep=0in
+\parsep=0in
+\newsectionwidth{1.05in}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{helvet}
+
+\usepackage[colorlinks = true,
+			linkcolor = blue,
+			urlcolor  = blue,
+			citecolor = blue,
+			anchorcolor = blue]{hyperref}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{720pt}
+
+% If you are not printing a bibliography section, you can remove biblatex.
+\usepackage[backend=biber,
+            style=authoryear,
+            sorting=nyt,
+            natbib=true,
+            maxbibnames=99,
+            firstinits=true,
+            uniquename=false]{biblatex}
+\addbibresource{publications.bib}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT
+%----------------------------------------------------------------------------------------
+\begin{center}
+    \hspace{-\hoffset}
+    {\huge \bf Amanpreet S. Walia}
+\end{center}
+\vspace{-4mm}
+\moveleft\hoffset\vbox{\hrule width \linewidth height 0.5pt}
+\vspace{-7mm}
+\begin{center}
+    \hspace{-\hoffset}
+    \href{mailto:amanpreetwalia278@gmail.com}{amanpreetwalia278@gmail.com}
+    ~\textbullet~ +1 (905) 781-9261
+    ~\textbullet~ Brampton, ON, Canada
+\end{center}
+\vspace{-6mm}
+
+\begin{resume}
+% ---- tighten spacing to fit 1 page ----
+\vspace{-2mm}
+\setlist[itemize]{leftmargin=*, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Summary}
+Computer vision engineer specializing in on-device image enhancement (HDR, super-resolution) and deployment to mobile hardware. Experienced with PyTorch training pipelines, AIMET quantization, and Qualcomm SNPE/DLC integration. Additional expertise in local LLM deployment (llama.cpp, Ollama, GPT-OSS) and GGUF quantization. Strong research background with peer-reviewed publications and a patent in computational photography.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\textbf{M.Sc. (Thesis), Computer Science} \hfill 2018 -- 2021\\
+McGill University \\
+Thesis: \href{https://escholarship.mcgill.ca/concern/theses/fx719s021}{Uncertainty in depth estimation using RGB-gated images} \\
+Supervisor: Prof.\ Michael Langer \\
+GPA: \textbf{3.90}/4.00
+
+\vspace{-1mm}
+\textbf{B.Eng., Computer Engineering} \hfill 2013 -- 2018\\
+York University \\
+GPA: \textbf{7.9}/9.0
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\textbf{Languages}: Python, C++, C, Java, MATLAB, SQL \\
+\textbf{Frameworks/Tools}: PyTorch, Qualcomm SNPE, AIMET, OpenCV, TensorFlow, Keras, llama.cpp, Ollama, \LaTeX \\
+\textbf{Hardware}: Qualcomm Snapdragon, Nvidia Jetson TX1, Huawei Atlas 200, Raspberry Pi
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+
+\textbf{Computer Vision Research Engineer, \href{https://www.sra.samsung.com/}{Samsung Research America}} \hfill Dec 2022 -- Present\\
+\textbf{Theme}: \textcolor{blue}{\emph{Efficient Models for Image Enhancement}}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+    \item Deployed image enhancement models to Qualcomm devices by converting pipelines to SNPE/DLC and resolving operator/runtime constraints for production inference.
+    \item Built and optimized super-resolution and HDR components with a focus on on-device quality stability (artifact control, consistency across scenes) and runtime efficiency.
+    \item Improved latency and memory footprint through deployment-oriented architecture changes and quantization workflows using AIMET.
+\end{itemize}
+
+\textbf{Computer Vision Researcher, \href{https://www.algolux.com/}{Algolux}} \hfill Aug 2021 -- Dec 2022\\
+\textbf{Theme}: \textcolor{blue}{\emph{Depth Estimation from RGB \& Gated Images}}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+    \item Developed a self-supervised depth estimation approach for gated imaging that improved generalization and closed the gap with prior supervised baselines under real capture conditions.
+\end{itemize}
+
+\textbf{Machine Learning Engineer (Full-time Contract), \href{https://www.huawei.com/ca/}{Huawei Canada}} \hfill Mar 2021 -- Aug 2021\\
+\textbf{Theme}: \textcolor{blue}{\emph{Model Compression for NLP on NPU}}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+    \item Ported low-rank decomposed GPT-2/CPM-style models to Huawei NPU execution constraints; validated accuracy/performance trade-offs and integration readiness.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{itemize}[leftmargin=*]
+    \item Amirhossein Kazerouni, Maitreya Suin, Tristan Aumentado-Armstrong, Sina Honari, \textbf{Amanpreet S. Walia}, Iqbal Mohomed, Kosta Derpanis, Babak Taati.\\
+    \textit{Face2Scene: Using Facial Degradation as an Oracle for Diffusion-Based Scene Restoration}. \textbf{CVPR 2026 (Accepted)}.
+
+    \item Stefanie Walz, Mario Bijelic, Andrea Ramazzina, \textbf{Amanpreet S. Walia}, Fahim Mannan, Felix Heide.\\
+    \textit{Gated Stereo: Joint Depth Estimation from Gated and Wide-Baseline Active Stereo Cues}. \textbf{CVPR 2023}. arXiv:2305.12955.\\
+    \href{https://arxiv.org/abs/2305.12955}{https://arxiv.org/abs/2305.12955}
+
+    \item \textbf{Amanpreet S. Walia}, Stefanie Walz, Mario Bijelic, Fahim Mannan, Fernando Julca-Aguilar, Michael Langer, Felix Heide.\\
+    \textit{Gated2Gated: Self-Supervised Depth Estimation from Gated Images}. \textbf{CVPR 2022}. arXiv:2112.02416.\\
+    \href{http://arxiv.org/abs/2112.02416}{http://arxiv.org/abs/2112.02416}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PATENTS
+%----------------------------------------------------------------------------------------
+\section{Patents}
+\vspace{-0.1cm}
+
+\textbf{Dual-camera Joint Denoising-Deblurring using Burst of Short and Long Exposure Images}. \hfill 2024\\
+Inventors: Shayan Shekarforoush, \textbf{Amanpreet Singh Walia}, Aleksai Levinshtein, Konstantinos G.\ Derpanis, Marcus A.\ Brubaker\\
+Patent Application: \href{https://patents.google.com/patent/US20240311968A1/en}{US20240311968A1}
+
+\end{resume}
+\end{document}

@@ -74,6 +74,16 @@ export const siteConfig = {
         },
     ],
 
+    writing: [
+        {
+            title: "Exploring On-Device Efficiency with Local LLMs",
+            description: "A deep dive into deploying quantized Llama-3 models using Ollama and llama.cpp on edge hardware.",
+            link: "https://medium.com/@amanwalia123",
+            date: "Feb 2024",
+            tags: ["Edge AI", "LLMs", "Optimization"]
+        }
+    ],
+
     experience: [
         {
             company: "Samsung Research America",

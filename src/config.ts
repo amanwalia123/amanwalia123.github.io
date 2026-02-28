@@ -42,9 +42,8 @@ export const siteConfig = {
         }
     ],
 
-    // This template doesn't have a dedicated "Publications" section.
-    // Best fit is "projects": we list your papers + patent here so they render nicely.
-    projects: [
+    // Separate academic research from technical side projects
+    research: [
         {
             name: "Face2Scene — CVPR 2026 (Accepted)",
             description:
@@ -67,18 +66,27 @@ export const siteConfig = {
             skills: ["CVPR 2022", "Self-supervised", "Depth"],
         },
         {
-            name: "Local LLM Exploration",
-            description:
-                "Setting up and evaluating quantized LLMs (Llama-3, Mistral) on local desktop and edge hardware using GPT-OSS, llama.cpp, and Ollama. Focused on GGUF format optimization and on-device performance profiling.",
-            link: "https://github.com/amanwalia123",
-            skills: ["GPT-OSS", "Ollama", "llama.cpp", "GGUF", "Quantization"],
-        },
-        {
             name: "Patent — Burst Denoising/Deblurring (2024)",
             description:
                 "Dual-camera Joint Denoising-Deblurring using Burst of Short and Long Exposure Images. US20240311968A1.",
             link: "https://patents.google.com/patent/US20240311968A1/en",
             skills: ["Computational Photography", "Burst", "Patent"],
+        },
+        {
+            name: "Full Project History",
+            description: "View my full list of projects and research on GitHub.",
+            link: "https://github.com/amanwalia123",
+            skills: ["GitHub", "Open Source"],
+        }
+    ],
+
+    sideProjects: [
+        {
+            name: "Local LLM Exploration",
+            description:
+                "Setting up and evaluating quantized LLMs (Llama-3, Mistral) on local desktop and edge hardware using GPT-OSS, llama.cpp, and Ollama. Focused on GGUF format optimization and on-device performance profiling.",
+            link: "https://github.com/amanwalia123",
+            skills: ["GPT-OSS", "Ollama", "llama.cpp", "GGUF", "Quantization"],
         },
     ],
 

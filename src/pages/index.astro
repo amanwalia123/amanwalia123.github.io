@@ -104,10 +104,10 @@ import { siteConfig } from '../config';
         </div>
       </section>
 
-      <section id="projects" class="animate-fade-up" style="animation-delay: 0.4s">
-        <h2 class="section-title">Research & Projects</h2>
+      <section id="research" class="animate-fade-up" style="animation-delay: 0.4s">
+        <h2 class="section-title">Research & Publications</h2>
         <div class="grid md:grid-cols-2 gap-8 mt-10">
-          {siteConfig.projects.map(proj => (
+          {siteConfig.research.map(proj => (
             <a href={proj.link} target="_blank" class="group glass-card p-8 block hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-wrap gap-2 mb-6">
                 {proj.skills.map(skill => (
@@ -124,6 +124,32 @@ import { siteConfig } from '../config';
               </p>
               <div class="flex items-center gap-2 text-accent text-sm font-bold opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
                 View Publication <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" class="animate-fade-up" style="animation-delay: 0.45s">
+        <h2 class="section-title">Side Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8 mt-10">
+          {siteConfig.sideProjects.map(proj => (
+            <a href={proj.link} target="_blank" class="group glass-card p-8 block hover:-translate-y-2 transition-all duration-300">
+              <div class="flex flex-wrap gap-2 mb-6">
+                {proj.skills.map(skill => (
+                  <span class="text-[10px] font-bold text-accent uppercase tracking-wider bg-accent-soft px-2.5 py-1 rounded-md">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-primary group-hover:text-accent transition-colors">
+                {proj.name}
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed mb-6">
+                {proj.description}
+              </p>
+              <div class="flex items-center gap-2 text-accent text-sm font-bold opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
+                View on GitHub <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </div>
             </a>
           ))}

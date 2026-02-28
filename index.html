@@ -36,6 +36,7 @@
 
     a{ color: var(--accent); text-decoration:none; }
     a:hover{ text-decoration:underline; }
+
     .wrap{ max-width: var(--max); margin: 0 auto; padding: 32px 18px 64px; }
 
     header{
@@ -92,8 +93,12 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    .section{ margin-top: 12px; }
-    .item{ padding: 12px 12px; border-radius: 14px; border:1px solid transparent; }
+
+    .item{
+      padding: 12px 12px;
+      border-radius: 14px;
+      border:1px solid transparent;
+    }
     .item + .item{ margin-top: 10px; }
     .item:hover{ border-color: rgba(110,168,254,.25); background: rgba(11,12,16,.35); }
 
@@ -101,6 +106,7 @@
     .role b{ font-size: 15px; }
     .role span{ color: var(--muted); font-size: 13px; }
     .meta{ color: var(--muted); font-size: 13px; margin-top: 4px; }
+
     ul{ margin: 8px 0 0 18px; padding: 0; }
     li{ margin: 6px 0; }
 
@@ -126,6 +132,7 @@
       display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
     }
     .small{ font-size: 12px; color: var(--muted); }
+
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
       padding: 10px 12px;
@@ -152,8 +159,7 @@
           <div class="pill"><b>Location</b> Brampton, ON</div>
           <div class="pill"><b>Email</b> <a href="mailto:amanpreetwalia278@gmail.com">amanpreetwalia278@gmail.com</a></div>
           <div class="pill"><b>GitHub</b> <a href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">amanwalia123</a></div>
-          <!-- Optional: add your LinkedIn -->
-          <div class="pill"><b>LinkedIn</b> <a href="#" id="linkedinLink">add-link</a></div>
+          <div class="pill"><b>LinkedIn</b> <a href="https://www.linkedin.com/in/amanpreetwalia/" target="_blank" rel="noreferrer">amanpreetwalia</a></div>
         </div>
 
         <nav>
@@ -168,12 +174,12 @@
       <div style="min-width: 220px; max-width: 280px;">
         <div class="card" style="padding:14px 14px;">
           <h2 style="margin-bottom:8px;">Quick Links</h2>
-          <div class="section" style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; flex-direction:column; gap:10px;">
             <a class="btn" href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/amanpreetwalia/" target="_blank" rel="noreferrer">LinkedIn</a>
             <!-- Put your resume PDF in the repo as resume.pdf -->
             <a class="btn" href="./resume.pdf">Resume (PDF)</a>
-            <a class="btn" href="#contact">Contact</a>
-            <div class="small">Tip: upload <span style="font-family:var(--mono);">resume.pdf</span> to this repo to enable the button.</div>
+            <div class="small">Upload <span style="font-family:var(--mono);">resume.pdf</span> to this repo to enable the button.</div>
           </div>
         </div>
       </div>
@@ -230,7 +236,7 @@
         <h2 id="publications" style="margin-top:18px;">Publications</h2>
         <div class="item">
           <ul>
-            <li><b>CVPR 2026 (Accepted):</b> <i>Face2Scene: Using Facial Degradation as an Oracle for Diffusion-Based Scene Restoration</i>. (Kazerouni et al.; Walia, A. S.)</li>
+            <li><b>CVPR 2026 (Accepted):</b> <i>Face2Scene: Using Facial Degradation as an Oracle for Diffusion-Based Scene Restoration</i>.</li>
             <li><b>CVPR 2023:</b> <i>Gated Stereo: Joint Depth Estimation from Gated and Wide-Baseline Active Stereo Cues</i>. arXiv:2305.12955</li>
             <li><b>CVPR 2022:</b> <i>Gated2Gated: Self-Supervised Depth Estimation from Gated Images</i>. arXiv:2112.02416</li>
           </ul>
@@ -255,14 +261,14 @@
 
       <aside class="card">
         <h2 id="skills">Skills</h2>
-        <div class="section kv" aria-label="skills">
+        <div class="kv" aria-label="skills">
           <div class="k">Languages</div><div>Python, C++, C, Java, MATLAB, SQL</div>
           <div class="k">Tools</div><div>PyTorch, OpenCV, Qualcomm SNPE/DLC, AIMET, TensorFlow, Keras</div>
           <div class="k">Hardware</div><div>Qualcomm Snapdragon, Jetson TX1, Huawei Atlas 200, Raspberry Pi</div>
         </div>
 
         <h2 style="margin-top:18px;">Education</h2>
-        <div class="section">
+        <div>
           <div class="item">
             <div class="role"><b>M.Sc. (Thesis), Computer Science — McGill</b><span>2018–2021</span></div>
             <div class="meta">GPA: 3.90/4.00 • Thesis on uncertainty in depth estimation using RGB-gated images</div>
@@ -274,15 +280,12 @@
         </div>
 
         <h2 id="contact" style="margin-top:18px;">Contact</h2>
-        <div class="section">
-          <div class="item">
-            <div class="meta">
-              Email: <a href="mailto:amanpreetwalia278@gmail.com">amanpreetwalia278@gmail.com</a><br/>
-              GitHub: <a href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">github.com/amanwalia123</a><br/>
-              LinkedIn: <a href="#" id="linkedinLink2">add-link</a>
-            </div>
+        <div class="item">
+          <div class="meta">
+            Email: <a href="mailto:amanpreetwalia278@gmail.com">amanpreetwalia278@gmail.com</a><br/>
+            GitHub: <a href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">github.com/amanwalia123</a><br/>
+            LinkedIn: <a href="https://www.linkedin.com/in/amanpreetwalia/" target="_blank" rel="noreferrer">linkedin.com/in/amanpreetwalia</a>
           </div>
-          <div class="small">Edit the LinkedIn URL near the bottom of this file.</div>
         </div>
       </aside>
     </main>
@@ -294,19 +297,7 @@
   </div>
 
   <script>
-    // Update year
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Set your LinkedIn URL here:
-    const LINKEDIN_URL = "https://www.linkedin.com/in/YOUR-HANDLE/";
-    const link1 = document.getElementById("linkedinLink");
-    const link2 = document.getElementById("linkedinLink2");
-    [link1, link2].forEach(a => {
-      a.href = LINKEDIN_URL;
-      a.textContent = LINKEDIN_URL.includes("YOUR-HANDLE") ? "linkedin.com/in/..." : LINKEDIN_URL.replace("https://www.", "");
-      a.target = "_blank";
-      a.rel = "noreferrer";
-    });
   </script>
 </body>
 </html>

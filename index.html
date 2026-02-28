@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Amanpreet S. Walia — Computer Vision Research Engineer" />
+  <title>Amanpreet S. Walia</title>
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#111218;
+      --text:#e8eaf0;
+      --muted:#a6adbb;
+      --line:#232535;
+      --accent:#6ea8fe;
+      --accent2:#7ee2b8;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 980px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      background: radial-gradient(1200px 800px at 10% 0%, rgba(110,168,254,.18), transparent 60%),
+                  radial-gradient(900px 700px at 90% 20%, rgba(126,226,184,.12), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 32px 18px 64px; }
+
+    header{
+      display:flex; gap:18px; align-items:flex-start; justify-content:space-between;
+      padding: 22px 22px;
+      background: rgba(17,18,24,.75);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .title h1{ margin:0; font-size: 28px; letter-spacing: .2px; }
+    .title p{ margin:6px 0 0; color: var(--muted); max-width: 62ch; }
+    .pillbar{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 7px 10px; border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(11,12,16,.55);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .pill b{ color: var(--text); font-weight: 600; }
+
+    nav{
+      margin-top: 16px;
+      display:flex; flex-wrap:wrap; gap:10px;
+    }
+    .navbtn{
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: rgba(17,18,24,.55);
+      color: var(--text);
+      font-size: 13px;
+    }
+    .navbtn:hover{ text-decoration:none; border-color: rgba(110,168,254,.55); }
+
+    main{ margin-top: 18px; display:grid; grid-template-columns: 1.2fr .8fr; gap: 16px; }
+    @media (max-width: 860px){ main{ grid-template-columns: 1fr; } }
+
+    .card{
+      background: rgba(17,18,24,.75);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+      backdrop-filter: blur(10px);
+    }
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .section{ margin-top: 12px; }
+    .item{ padding: 12px 12px; border-radius: 14px; border:1px solid transparent; }
+    .item + .item{ margin-top: 10px; }
+    .item:hover{ border-color: rgba(110,168,254,.25); background: rgba(11,12,16,.35); }
+
+    .role{ display:flex; gap:10px; justify-content:space-between; align-items:baseline; flex-wrap:wrap; }
+    .role b{ font-size: 15px; }
+    .role span{ color: var(--muted); font-size: 13px; }
+    .meta{ color: var(--muted); font-size: 13px; margin-top: 4px; }
+    ul{ margin: 8px 0 0 18px; padding: 0; }
+    li{ margin: 6px 0; }
+
+    .tagrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px; }
+    .tag{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(11,12,16,.45);
+    }
+
+    .kv{ display:grid; grid-template-columns: 120px 1fr; gap:10px; font-size: 13px; }
+    .kv div{ padding: 8px 10px; border-radius: 12px; border:1px solid var(--line); background: rgba(11,12,16,.35); }
+    .kv .k{ color: var(--muted); }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    }
+    .small{ font-size: 12px; color: var(--muted); }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border:1px solid var(--line);
+      background: rgba(11,12,16,.35);
+      color: var(--text);
+    }
+    .btn:hover{ text-decoration:none; border-color: rgba(126,226,184,.45); }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>Amanpreet S. Walia</h1>
+        <p>
+          Computer Vision Research Engineer focused on on-device imaging (HDR / Super-Resolution),
+          model optimization, and mobile deployment (Qualcomm SNPE/DLC, quantization).
+        </p>
+
+        <div class="pillbar">
+          <div class="pill"><b>Location</b> Brampton, ON</div>
+          <div class="pill"><b>Email</b> <a href="mailto:amanpreetwalia278@gmail.com">amanpreetwalia278@gmail.com</a></div>
+          <div class="pill"><b>GitHub</b> <a href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">amanwalia123</a></div>
+          <!-- Optional: add your LinkedIn -->
+          <div class="pill"><b>LinkedIn</b> <a href="#" id="linkedinLink">add-link</a></div>
+        </div>
+
+        <nav>
+          <a class="navbtn" href="#experience">Experience</a>
+          <a class="navbtn" href="#publications">Publications</a>
+          <a class="navbtn" href="#patents">Patents</a>
+          <a class="navbtn" href="#skills">Skills</a>
+          <a class="navbtn" href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div style="min-width: 220px; max-width: 280px;">
+        <div class="card" style="padding:14px 14px;">
+          <h2 style="margin-bottom:8px;">Quick Links</h2>
+          <div class="section" style="display:flex; flex-direction:column; gap:10px;">
+            <a class="btn" href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">GitHub</a>
+            <!-- Put your resume PDF in the repo as resume.pdf -->
+            <a class="btn" href="./resume.pdf">Resume (PDF)</a>
+            <a class="btn" href="#contact">Contact</a>
+            <div class="small">Tip: upload <span style="font-family:var(--mono);">resume.pdf</span> to this repo to enable the button.</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2 id="experience">Experience</h2>
+
+        <div class="item">
+          <div class="role">
+            <b>Computer Vision Research Engineer — Samsung Research America</b>
+            <span>Dec 2022 — Present</span>
+          </div>
+          <div class="meta">On-device image enhancement • deployment to Qualcomm platforms</div>
+          <ul>
+            <li>Deployed image enhancement models to Qualcomm devices by converting pipelines to SNPE/DLC and resolving operator/runtime constraints for production inference.</li>
+            <li>Built and optimized Super-Resolution and HDR components focusing on on-device quality stability (artifact control, consistency across scenes) and runtime efficiency.</li>
+            <li>Improved latency and memory footprint through deployment-oriented architecture changes and quantization workflows (AIMET).</li>
+          </ul>
+          <div class="tagrow">
+            <span class="tag">PyTorch</span><span class="tag">SNPE / DLC</span><span class="tag">AIMET</span><span class="tag">Mobile CV</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <b>Computer Vision Researcher — Algolux</b>
+            <span>Aug 2021 — Dec 2022</span>
+          </div>
+          <div class="meta">Depth estimation • gated imaging</div>
+          <ul>
+            <li>Developed a self-supervised depth estimation approach for gated imaging that improved generalization and closed the gap with prior supervised baselines under real capture conditions.</li>
+          </ul>
+          <div class="tagrow">
+            <span class="tag">Self-supervised</span><span class="tag">Depth</span><span class="tag">Gated Imaging</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="role">
+            <b>Machine Learning Engineer (Contract) — Huawei Canada</b>
+            <span>Mar 2021 — Aug 2021</span>
+          </div>
+          <div class="meta">Model compression • NPU constraints</div>
+          <ul>
+            <li>Ported low-rank decomposed GPT-2/CPM-style models to Huawei NPU execution constraints; validated accuracy/performance trade-offs and integration readiness.</li>
+          </ul>
+          <div class="tagrow">
+            <span class="tag">Compression</span><span class="tag">NPU</span><span class="tag">NLP</span>
+          </div>
+        </div>
+
+        <h2 id="publications" style="margin-top:18px;">Publications</h2>
+        <div class="item">
+          <ul>
+            <li><b>CVPR 2026 (Accepted):</b> <i>Face2Scene: Using Facial Degradation as an Oracle for Diffusion-Based Scene Restoration</i>. (Kazerouni et al.; Walia, A. S.)</li>
+            <li><b>CVPR 2023:</b> <i>Gated Stereo: Joint Depth Estimation from Gated and Wide-Baseline Active Stereo Cues</i>. arXiv:2305.12955</li>
+            <li><b>CVPR 2022:</b> <i>Gated2Gated: Self-Supervised Depth Estimation from Gated Images</i>. arXiv:2112.02416</li>
+          </ul>
+          <div class="tagrow">
+            <a class="tag" href="https://arxiv.org/abs/2305.12955" target="_blank" rel="noreferrer">arXiv:2305.12955</a>
+            <a class="tag" href="https://arxiv.org/abs/2112.02416" target="_blank" rel="noreferrer">arXiv:2112.02416</a>
+          </div>
+        </div>
+
+        <h2 id="patents" style="margin-top:18px;">Patents</h2>
+        <div class="item">
+          <div class="role">
+            <b>Dual-camera Joint Denoising-Deblurring using Burst of Short and Long Exposure Images</b>
+            <span>2024</span>
+          </div>
+          <div class="meta">
+            Patent Application:
+            <a href="https://patents.google.com/patent/US20240311968A1/en" target="_blank" rel="noreferrer">US20240311968A1</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2 id="skills">Skills</h2>
+        <div class="section kv" aria-label="skills">
+          <div class="k">Languages</div><div>Python, C++, C, Java, MATLAB, SQL</div>
+          <div class="k">Tools</div><div>PyTorch, OpenCV, Qualcomm SNPE/DLC, AIMET, TensorFlow, Keras</div>
+          <div class="k">Hardware</div><div>Qualcomm Snapdragon, Jetson TX1, Huawei Atlas 200, Raspberry Pi</div>
+        </div>
+
+        <h2 style="margin-top:18px;">Education</h2>
+        <div class="section">
+          <div class="item">
+            <div class="role"><b>M.Sc. (Thesis), Computer Science — McGill</b><span>2018–2021</span></div>
+            <div class="meta">GPA: 3.90/4.00 • Thesis on uncertainty in depth estimation using RGB-gated images</div>
+          </div>
+          <div class="item">
+            <div class="role"><b>B.Eng., Computer Engineering — York</b><span>2013–2018</span></div>
+            <div class="meta">GPA: 7.9/9.0</div>
+          </div>
+        </div>
+
+        <h2 id="contact" style="margin-top:18px;">Contact</h2>
+        <div class="section">
+          <div class="item">
+            <div class="meta">
+              Email: <a href="mailto:amanpreetwalia278@gmail.com">amanpreetwalia278@gmail.com</a><br/>
+              GitHub: <a href="https://github.com/amanwalia123" target="_blank" rel="noreferrer">github.com/amanwalia123</a><br/>
+              LinkedIn: <a href="#" id="linkedinLink2">add-link</a>
+            </div>
+          </div>
+          <div class="small">Edit the LinkedIn URL near the bottom of this file.</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Amanpreet S. Walia</div>
+      <div class="small">Built with plain HTML/CSS • hosted on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    // Update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Set your LinkedIn URL here:
+    const LINKEDIN_URL = "https://www.linkedin.com/in/YOUR-HANDLE/";
+    const link1 = document.getElementById("linkedinLink");
+    const link2 = document.getElementById("linkedinLink2");
+    [link1, link2].forEach(a => {
+      a.href = LINKEDIN_URL;
+      a.textContent = LINKEDIN_URL.includes("YOUR-HANDLE") ? "linkedin.com/in/..." : LINKEDIN_URL.replace("https://www.", "");
+      a.target = "_blank";
+      a.rel = "noreferrer";
+    });
+  </script>
+</body>
+</html>

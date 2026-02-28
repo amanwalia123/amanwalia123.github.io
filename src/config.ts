@@ -44,7 +44,7 @@ export const siteConfig = {
             name: "Gated Stereo — CVPR 2023",
             description:
                 "Gated Stereo: Joint Depth Estimation from Gated and Wide-Baseline Active Stereo Cues. arXiv:2305.12955",
-            link: "https://arxiv.org/abs/2305.12955",
+            link: "https://light.princeton.edu/publication/gatedstereo/",
             skills: ["CVPR 2023", "Depth", "Gated Imaging"],
         },
         {

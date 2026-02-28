@@ -30,7 +30,7 @@ export const siteConfig = {
         },
         {
             category: "Optim & Deployment",
-            items: ["Qualcomm SNPE", "AIMET", "Model Quantization", "llama.cpp", "Ollama", "Model Compression", "NPU Optimization"]
+            items: ["Qualcomm SNPE/DLC", "AIMET", "Model Quantization", "LLM Deployment (Ollama, llama.cpp, GGUF)", "Model Compression", "NPU Optimization"]
         },
         {
             category: "Languages & Tools",
@@ -71,22 +71,6 @@ export const siteConfig = {
                 "Dual-camera Joint Denoising-Deblurring using Burst of Short and Long Exposure Images. US20240311968A1.",
             link: "https://patents.google.com/patent/US20240311968A1/en",
             skills: ["Computational Photography", "Burst", "Patent"],
-        },
-        {
-            name: "Full Project History",
-            description: "View my full list of projects and research on GitHub.",
-            link: "https://github.com/amanwalia123",
-            skills: ["GitHub", "Open Source"],
-        }
-    ],
-
-    sideProjects: [
-        {
-            name: "Local LLM Exploration",
-            description:
-                "Setting up and evaluating quantized LLMs (Llama-3, Mistral) on local desktop and edge hardware using GPT-OSS, llama.cpp, and Ollama. Focused on GGUF format optimization and on-device performance profiling.",
-            link: "https://github.com/amanwalia123",
-            skills: ["GPT-OSS", "Ollama", "llama.cpp", "GGUF", "Quantization"],
         },
     ],
 

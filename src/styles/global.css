@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #0f172a;
+    --color-accent: #3b82f6;
+    --color-accent-soft: rgba(59, 130, 246, 0.1);
+    --color-surface: #ffffff;
+    --color-background: #f8fafc;
+
+    --font-sans: 'Outfit', 'Inter', sans-serif;
+
+    --shadow-premium: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+@layer base {
+    body {
+        @apply bg-background text-primary selection:bg-accent/20;
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+    .glass-card {
+        @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass rounded-2xl;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold tracking-tight mb-8 relative inline-block;
+    }
+
+    .section-title::after {
+        @apply content-[''] absolute -bottom-2 left-0 w-12 h-1 bg-accent rounded-full;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.6s ease-out forwards;
+}
+
+.bg-mesh {
+    background-color: #f8fafc;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(217, 91%, 60%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(217, 91%, 60%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(217, 91%, 60%, 0.05) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(217, 91%, 60%, 0.05) 0px, transparent 50%);
+}

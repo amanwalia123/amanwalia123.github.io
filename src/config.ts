@@ -67,11 +67,11 @@ export const siteConfig = {
             skills: ["CVPR 2022", "Self-supervised", "Depth"],
         },
         {
-            name: "Local AI Research & Deployment",
+            name: "Local LLM Exploration",
             description:
-                "Optimizing and deploying local LLMs (Llama-3, Mistral) on edge hardware using llama.cpp (GGUF quantization) and Ollama for privacy-focused AI assistant workflows.",
+                "Setting up and evaluating quantized LLMs (Llama-3, Mistral) on local desktop and edge hardware using GPT-OSS, llama.cpp, and Ollama. Focused on GGUF format optimization and on-device performance profiling.",
             link: "https://github.com/amanwalia123",
-            skills: ["Local AI", "llama.cpp", "LLMs", "Quantization"],
+            skills: ["GPT-OSS", "Ollama", "llama.cpp", "GGUF", "Quantization"],
         },
         {
             name: "Patent — Burst Denoising/Deblurring (2024)",

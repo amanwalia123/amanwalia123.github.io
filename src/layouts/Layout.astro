@@ -30,6 +30,26 @@ import "../styles/global.css";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": siteConfig.name,
+      "jobTitle": siteConfig.title,
+      "url": siteConfig.metadata.url,
+      "image": `${siteConfig.metadata.url}${siteConfig.metadata.image}`,
+      "sameAs": [
+        siteConfig.social.linkedin,
+        siteConfig.social.github
+      ],
+      "knowsAbout": siteConfig.skills.flatMap(s => s.items),
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Samsung Research America"
+      }
+    })}>
+    </script>
   </head>
   <body class="bg-mesh min-h-screen">
     <slot />

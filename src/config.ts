@@ -51,7 +51,7 @@ export const siteConfig = {
             name: "Gated2Gated — CVPR 2022",
             description:
                 "Gated2Gated: Self-Supervised Depth Estimation from Gated Images. arXiv:2112.02416",
-            link: "http://arxiv.org/abs/2112.02416",
+            link: "https://light.princeton.edu/publication/gated2gated/",
             skills: ["CVPR 2022", "Self-supervised", "Depth"],
         },
         {

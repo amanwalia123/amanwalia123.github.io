@@ -16,18 +16,30 @@ export const siteConfig = {
     aboutMe:
         "Computer Vision Research Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Previously at Algolux working on depth estimation for gated imaging. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
 
+    metadata: {
+        title: "Amanpreet S. Walia | CV Research Engineer",
+        description: "Specializing in HDR, Super-Resolution, and on-device model optimization for Qualcomm SNPE/DLC.",
+        url: "https://amanwalia123.github.io",
+        image: "/profile.jpg",
+    },
+
     skills: [
-        "Python",
-        "C++",
-        "PyTorch",
-        "OpenCV",
-        "Qualcomm SNPE/DLC",
-        "AIMET",
-        "Model Optimization",
-        "Quantization",
-        "HDR Imaging",
-        "Super-Resolution",
-        "Computational Photography",
+        {
+            category: "Core AI & CV",
+            items: ["PyTorch", "TensorFlow", "Keras", "OpenCV", "Super-Resolution", "HDR Imaging", "Self-Supervised Learning", "Depth Estimation"]
+        },
+        {
+            category: "Optim & Deployment",
+            items: ["Qualcomm SNPE", "AIMET", "Model Quantization", "Model Compression", "NPU Optimization", "Latency Analysis"]
+        },
+        {
+            category: "Languages & Tools",
+            items: ["Python", "C++", "C", "Java", "MATLAB", "SQL", "Git", "LaTeX"]
+        },
+        {
+            category: "Hardware",
+            items: ["Qualcomm Snapdragon", "Nvidia Jetson", "Huawei Atlas", "Raspberry Pi"]
+        }
     ],
 
     // This template doesn't have a dedicated "Publications" section.

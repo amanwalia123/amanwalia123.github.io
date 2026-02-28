@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  28 FEB 2026 01:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.24)  28 FEB 2026 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,18 +288,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 56.
-
-Overfull \hbox (17.09125pt too wide) in paragraph at lines 68--69
-[]\OT1/cmr/m/n/10 Computer Vi-sion Re-search En-gi-neer spe-cial-iz-ing in on-d
-evice im-age en-hance-ment, model op-ti-miza-tion (SNPE/DLC,
- []
-
-
-Overfull \hbox (7.06676pt too wide) in paragraph at lines 123--123
-[]\OT1/cmr/m/sc/10 Publications  
- []
-
-[1
+ [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] ) 
 Here is how much of TeX's memory you used:
@@ -323,7 +312,7 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
 22/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022
 /texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on resume.pdf (1 page, 153527 bytes).
+Output written on resume.pdf (1 page, 153618 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream

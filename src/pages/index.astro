@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteConfig } from '../config';
+---
+
+<Layout title={`${siteConfig.name} - ${siteConfig.title}`}>
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">{siteConfig.name}</h1>
+      <p class="text-xl text-blue-700 font-medium">{siteConfig.title}</p>
+      <div class="mt-4 flex gap-4 text-gray-600">
+        <a href={`mailto:${siteConfig.social.email}`} class="hover:text-blue-700 transition">Email</a>
+        <a href={siteConfig.social.linkedin} target="_blank" class="hover:text-blue-700 transition">LinkedIn</a>
+        <a href={siteConfig.social.github} target="_blank" class="hover:text-blue-700 transition">GitHub</a>
+        <a href="/resume.pdf" target="_blank" class="hover:text-blue-700 transition">Resume</a>
+      </div>
+    </header>
+
+    <section id="about" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-gray-800">About Me</h2>
+      <p class="text-gray-700 leading-relaxed">{siteConfig.aboutMe}</p>
+    </section>
+
+    <section id="skills" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-gray-800">Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        {siteConfig.skills.map(skill => (
+          <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-100">{skill}</span>
+        ))}
+      </div>
+    </section>
+
+    <section id="experience" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-gray-800">Experience</h2>
+      <div class="space-y-8">
+        {siteConfig.experience.map(exp => (
+          <div class="relative pl-4 border-l-2 border-blue-100">
+            <div class="flex justify-between items-start mb-1">
+              <h3 class="text-lg font-bold text-gray-900">{exp.company}</h3>
+              <span class="text-sm text-gray-500 font-medium">{exp.dateRange}</span>
+            </div>
+            <p class="text-blue-700 font-medium mb-3">{exp.title}</p>
+            <ul class="list-disc list-outside ml-4 text-gray-700 space-y-1">
+              {exp.bullets.map(bullet => (
+                <li>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="projects" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-gray-800">Projects & Publications</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        {siteConfig.projects.map(proj => (
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+            <h3 class="text-lg font-bold mb-2">
+              <a href={proj.link} target="_blank" class="hover:text-blue-700 transition">{proj.name}</a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">{proj.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {proj.skills.map(skill => (
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{skill}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="education" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-gray-800">Education</h2>
+      <div class="space-y-6">
+        {siteConfig.education.map(edu => (
+          <div>
+            <div class="flex justify-between items-start mb-1">
+              <h3 class="text-lg font-bold text-gray-900">{edu.school}</h3>
+              <span class="text-sm text-gray-500 font-medium">{edu.dateRange}</span>
+            </div>
+            <p class="text-blue-700">{edu.degree}</p>
+            {edu.achievements && (
+              <div class="mt-2 flex flex-wrap gap-4">
+                {edu.achievements.map(ach => (
+                  <span class="text-sm text-gray-600 italic">{ach}</span>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <footer class="mt-20 pt-12 border-t text-center text-gray-500 text-sm">
+      <p>&copy; <span id="year"></span> {siteConfig.name}</p>
+      <p class="mt-1">Built with Astro & Tailwind CSS • Hosted on GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script is:inline>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</Layout>

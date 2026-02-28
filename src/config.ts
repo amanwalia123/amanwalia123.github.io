@@ -14,7 +14,7 @@ export const siteConfig = {
     },
 
     aboutMe:
-        "Computer Vision Research Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Previously at Algolux working on depth estimation for gated imaging. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
+        "Computer Vision Research Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Experienced in local LLM deployment using Ollama and llama.cpp for edge AI applications. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
 
     metadata: {
         title: "Amanpreet S. Walia | CV Research Engineer",
@@ -30,7 +30,7 @@ export const siteConfig = {
         },
         {
             category: "Optim & Deployment",
-            items: ["Qualcomm SNPE", "AIMET", "Model Quantization", "Model Compression", "NPU Optimization", "Latency Analysis"]
+            items: ["Qualcomm SNPE", "AIMET", "Model Quantization", "llama.cpp", "Ollama", "Model Compression", "NPU Optimization"]
         },
         {
             category: "Languages & Tools",
@@ -65,6 +65,13 @@ export const siteConfig = {
                 "Gated2Gated: Self-Supervised Depth Estimation from Gated Images. arXiv:2112.02416",
             link: "https://light.princeton.edu/publication/gated2gated/",
             skills: ["CVPR 2022", "Self-supervised", "Depth"],
+        },
+        {
+            name: "Local AI Research & Deployment",
+            description:
+                "Optimizing and deploying local LLMs (Llama-3, Mistral) on edge hardware using llama.cpp (GGUF quantization) and Ollama for privacy-focused AI assistant workflows.",
+            link: "https://github.com/amanwalia123",
+            skills: ["Local AI", "llama.cpp", "LLMs", "Quantization"],
         },
         {
             name: "Patent — Burst Denoising/Deblurring (2024)",

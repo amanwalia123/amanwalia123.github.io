@@ -1,0 +1,92 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { siteConfig } from '../../config';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={`${post.data.title} - ${siteConfig.name}`} description={post.data.description}>
+  <main class="max-w-3xl mx-auto px-6 py-20">
+    <header class="mb-16 animate-fade-up">
+      <a href="/blog" class="inline-flex items-center gap-2 text-accent font-bold mb-8 hover:translate-x-[-4px] transition-transform">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Feed
+      </a>
+      <div class="flex items-center gap-4 mb-6">
+        <time datetime={post.data.pubDate.toISOString()} class="text-sm font-bold text-text-muted">
+          {post.data.pubDate.toLocaleDateString('en-us', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </time>
+        <div class="flex gap-2">
+          {post.data.tags.map((tag) => (
+            <span class="text-[10px] font-bold text-accent uppercase tracking-wider bg-accent-soft px-2.5 py-1 rounded-md">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+        {post.data.title}
+      </h1>
+      {post.data.heroImage && (
+        <img src={post.data.heroImage} alt="" class="w-full rounded-2xl shadow-premium my-12" />
+      )}
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-slate prose-headings:font-bold prose-headings:tracking-tight prose-a:text-accent prose-strong:text-gray-900">
+      <Content />
+    </div>
+
+    <footer class="mt-20 pt-12 border-t border-gray-100 dark:border-slate-800">
+      <div class="flex items-center gap-6">
+        <img src="/profile.jpg" alt={siteConfig.name} class="w-16 h-16 rounded-full object-cover shadow-sm" />
+        <div>
+          <h3 class="font-bold text-gray-900">{siteConfig.name}</h3>
+          <p class="text-sm text-gray-600">{siteConfig.title}</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</Layout>
+
+<style is:global>
+  /* Premium Typography & Article Styles */
+  .prose {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #334155;
+  }
+  .prose h1, .prose h2, .prose h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #0f172a;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+  .prose ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .prose li {
+    margin-bottom: 0.5em;
+  }
+</style>

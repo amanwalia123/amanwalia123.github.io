@@ -110,7 +110,7 @@ import { siteConfig } from '../config';
       <section id="projects" class="animate-fade-up" style="animation-delay: 0.4s">
         <h2 class="section-title">Research & Publications</h2>
         <div class="grid md:grid-cols-2 gap-8 mt-10">
-          {siteConfig.research.map(proj => (
+          {siteConfig.research.map((proj: any) => (
             proj.teaser ? (
               <div class="md:col-span-2 glass-card overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-none bg-surface/40 group">
                 <div class="flex flex-col md:flex-row">

@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "Amanpreet S. Walia",
-    title: "Computer Vision Research Engineer",
+    title: "Machine Learning Engineer",
     description:
         "On-device imaging (HDR / Super-Resolution) • Model optimization • Qualcomm SNPE/DLC • Quantization (AIMET)",
     accentColor: "#1d4ed8",
@@ -14,10 +14,10 @@ export const siteConfig = {
     },
 
     aboutMe:
-        "Computer Vision Research Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Experienced in local LLM deployment using Ollama and llama.cpp for edge AI applications. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
+        "Machine Learning Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Experienced in local LLM deployment using Ollama and llama.cpp for edge AI applications. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
 
     metadata: {
-        title: "Amanpreet S. Walia | CV Research Engineer",
+        title: "Amanpreet S. Walia | Machine Learning Engineer",
         description: "Specializing in HDR, Super-Resolution, and on-device model optimization for Qualcomm SNPE/DLC.",
         url: "https://amanwalia123.github.io",
         image: "/profile.jpg",
@@ -60,8 +60,10 @@ export const siteConfig = {
         },
         {
             name: "Gated2Gated — CVPR 2022",
-            description:
-                "Gated2Gated: Self-Supervised Depth Estimation from Gated Images. arXiv:2112.02416",
+            abstract:
+                "Gated2Gated: Self-Supervised Depth Estimation from Gated Images. This paper presents the first self-supervised method for depth estimation using gated cameras.",
+            teaser: "/teasers/gated2gated.jpg",
+            youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder for demo
             link: "https://light.princeton.edu/publication/gated2gated/",
             skills: ["CVPR 2022", "Self-supervised", "Depth"],
         },
@@ -87,7 +89,7 @@ export const siteConfig = {
     experience: [
         {
             company: "Samsung Research America",
-            title: "Computer Vision Research Engineer",
+            title: "Machine Learning Engineer",
             dateRange: "Dec 2022 - Present",
             bullets: [
                 "Deployed image enhancement models to Qualcomm devices by converting pipelines to SNPE/DLC and resolving operator/runtime constraints for production inference.",

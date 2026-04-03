@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "Amanpreet S. Walia",
-    title: "Machine Learning Engineer",
+    title: "Senior Machine Learning Engineer (Computer Vision)",
     description:
         "On-device imaging (HDR / Super-Resolution) • Model optimization • Qualcomm SNPE/DLC • Quantization (AIMET)",
     accentColor: "#1d4ed8",
@@ -14,10 +14,10 @@ export const siteConfig = {
     },
 
     aboutMe:
-        "Machine Learning Engineer focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Experienced in local LLM deployment using Ollama and llama.cpp for edge AI applications. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
+        "Senior Machine Learning Engineer (Computer Vision) focused on on-device image enhancement (HDR / Super-Resolution), model optimization, and deployment to Qualcomm platforms (SNPE/DLC, quantization). Experienced in local LLM deployment using Ollama and llama.cpp for edge AI applications. M.Sc. (Thesis) in Computer Science from McGill University and B.Eng. in Computer Engineering from York University.",
 
     metadata: {
-        title: "Amanpreet S. Walia | Machine Learning Engineer",
+        title: "Amanpreet S. Walia | Senior Machine Learning Engineer (CV)",
         description: "Specializing in HDR, Super-Resolution, and on-device model optimization for Qualcomm SNPE/DLC.",
         url: "https://amanwalia123.github.io",
         image: "/profile.jpg",
@@ -89,7 +89,7 @@ export const siteConfig = {
     experience: [
         {
             company: "Samsung Research America",
-            title: "Machine Learning Engineer",
+            title: "Senior Machine Learning Engineer (Computer Vision)",
             dateRange: "Dec 2022 - Present",
             bullets: [
                 "Deployed image enhancement models to Qualcomm devices by converting pipelines to SNPE/DLC and resolving operator/runtime constraints for production inference.",
